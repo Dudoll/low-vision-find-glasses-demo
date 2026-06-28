@@ -1,0 +1,10 @@
+simulator:
+  engine: ai2thor
+  scene: FloorPlan201
+  width: 640
+  height: 480
+  fov: 90
+  fps: 5
+  render_depth: true
+  render_class_image: false
+  render_object_image: false

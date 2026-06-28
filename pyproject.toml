@@ -1,0 +1,32 @@
+[project]
+name = "low-vision-find-glasses-demo"
+version = "0.1.0"
+description = "Simulator-first low-vision indoor object finding glasses demo"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+sim = [
+    "ai2thor",
+]
+vision = [
+    "opencv-python",
+    "onnxruntime",
+]
+audio = [
+    "sounddevice",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

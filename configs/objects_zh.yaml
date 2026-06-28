@@ -1,0 +1,50 @@
+objects:
+  手机:
+    aliases: ["手机", "电话", "cell phone", "phone"]
+    detector_labels: ["cell phone"]
+    typical_width_m: 0.075
+
+  杯子:
+    aliases: ["杯子", "水杯", "茶杯", "cup", "mug"]
+    detector_labels: ["cup"]
+    typical_width_m: 0.08
+
+  瓶子:
+    aliases: ["瓶子", "水瓶", "bottle"]
+    detector_labels: ["bottle"]
+    typical_width_m: 0.07
+
+  书:
+    aliases: ["书", "图书", "book"]
+    detector_labels: ["book"]
+    typical_width_m: 0.18
+
+  笔记本电脑:
+    aliases: ["笔记本", "电脑", "笔记本电脑", "laptop"]
+    detector_labels: ["laptop"]
+    typical_width_m: 0.32
+
+  鼠标:
+    aliases: ["鼠标", "mouse"]
+    detector_labels: ["mouse"]
+    typical_width_m: 0.06
+
+  键盘:
+    aliases: ["键盘", "keyboard"]
+    detector_labels: ["keyboard"]
+    typical_width_m: 0.30
+
+  背包:
+    aliases: ["背包", "包", "backpack"]
+    detector_labels: ["backpack"]
+    typical_width_m: 0.35
+
+  椅子:
+    aliases: ["椅子", "chair"]
+    detector_labels: ["chair"]
+    typical_width_m: 0.45
+
+  沙发:
+    aliases: ["沙发", "sofa", "couch"]
+    detector_labels: ["couch"]
+    typical_width_m: 1.5

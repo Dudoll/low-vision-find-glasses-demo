@@ -1,0 +1,34 @@
+runtime:
+  target_fps: 5
+  frame_queue_size: 1
+  max_frame_latency_ms: 200
+  drop_stale_frames: true
+
+vision:
+  detector: mock
+  model_path: models/yolo/yolo11n.onnx
+  input_size: 416
+  conf_threshold: 0.35
+  iou_threshold: 0.45
+  device: cpu
+
+distance:
+  source: depth_frame
+  very_near_m: 0.5
+  near_m: 1.0
+  mid_m: 2.0
+  far_m: 3.0
+
+cue:
+  mode: terminal
+  min_interval_ms: 800
+  same_message_interval_ms: 2000
+  distance_change_threshold_m: 0.3
+
+simulator:
+  engine: ai2thor
+  scene: FloorPlan201
+  width: 640
+  height: 480
+  fov: 90
+  render_depth: true

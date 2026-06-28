@@ -1,0 +1,16 @@
+cue:
+  min_interval_ms: 800
+  same_message_interval_ms: 2000
+  distance_change_threshold_m: 0.3
+
+distance_bands:
+  very_near_m: 0.5
+  near_m: 1.0
+  mid_m: 2.0
+  far_m: 3.0
+
+messages:
+  first_found: "发现{target}，在{direction}，约{distance}米"
+  closer: "{target}更近了，在{direction}"
+  very_near: "{target}很近，在{direction}"
+  lost: "暂时没有看到{target}"
