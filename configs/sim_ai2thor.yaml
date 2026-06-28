@@ -1,10 +1,13 @@
 simulator:
+  # Phase 1 simulator frame source settings.
   engine: ai2thor
   scene: FloorPlan201
   width: 640
   height: 480
   fov: 90
+  # Target capture rate. At 5 FPS each frame arrives every 200 ms.
   fps: 5
+  # Depth is optional in Phase 1, but enabled by default for later distance estimation.
   render_depth: true
   render_class_image: false
   render_object_image: false
