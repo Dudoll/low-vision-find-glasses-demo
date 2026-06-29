@@ -34,6 +34,11 @@ objects:
     detector_labels: ["keyboard"]
     typical_width_m: 0.30
 
+  遥控器:
+    aliases: ["遥控器", "遥控", "remote", "remote control"]
+    detector_labels: ["remote"]
+    typical_width_m: 0.17
+
   背包:
     aliases: ["背包", "包", "backpack"]
     detector_labels: ["backpack"]
@@ -47,4 +52,14 @@ objects:
   沙发:
     aliases: ["沙发", "sofa", "couch"]
     detector_labels: ["couch"]
+    typical_width_m: 1.5
+
+  桌子:
+    aliases: ["桌子", "桌", "餐桌", "table", "dining table"]
+    detector_labels: ["dining table"]
+    typical_width_m: 1.0
+
+  床:
+    aliases: ["床", "床铺", "bed"]
+    detector_labels: ["bed"]
     typical_width_m: 1.5
