@@ -5,6 +5,7 @@ runtime:
   drop_stale_frames: true
 
 vision:
+  # Phase 4 supports "mock" by default and optional "yolo" via the vision extra.
   detector: mock
   model_path: models/yolo/yolo11n.onnx
   input_size: 416
