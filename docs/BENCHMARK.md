@@ -68,3 +68,7 @@ Suggested command:
 ```bash
 python apps/benchmark.py --targets cup,bottle,book,laptop --episodes 1000
 ```
+
+Phase 6 currently implements a deterministic `mock` benchmark source. It writes the
+same output files as the future simulator benchmark path, so summary and metrics
+parsing can be developed before long AI2-THOR episodes are automated.
