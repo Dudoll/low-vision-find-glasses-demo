@@ -28,6 +28,9 @@ audio = [
     "sounddevice",
 ]
 
+[tool.setuptools.packages.find]
+include = ["lvfind*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 

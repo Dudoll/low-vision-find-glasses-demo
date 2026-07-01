@@ -26,6 +26,25 @@ cue:
   same_message_interval_ms: 2000
   distance_change_threshold_m: 0.3
 
+voice:
+  wake_word:
+    # Phase 5 default is manual; set to openwakeword when model/dependency is installed.
+    engine: manual
+    model_path: null
+    threshold: 0.5
+  asr:
+    # Phase 5 default accepts already-transcribed stdin text.
+    # Optional engines: vosk, whisper_cpp.
+    engine: stdin
+    model_path: null
+    sample_rate: 16000
+    whisper_cpp_binary: null
+    language: zh
+  tts:
+    # Terminal output is queued so it does not block the vision loop.
+    engine: terminal
+    queue_size: 8
+
 simulator:
   engine: ai2thor
   scene: FloorPlan201
